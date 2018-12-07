@@ -10,10 +10,8 @@
             <div class="w-2">
                 <div class="code-pre">
                     <div slot="content">
-                        <button class="btn" @click="doCopy">
-                            Copy
-                        </button>
-                        <pre>
+                        <pre class="pre-code">
+                        	<button class="btn btn-copy" @click="doCopy">Copy</button>
 							<code class="json" id="res_code"></code>
 						</pre>
                     </div>
@@ -42,13 +40,10 @@ export default {
 
     methods: {
         doCopy: function() {
-        	console.log(JSON.stringify(this.jsonData));
+        	var that = this;
             this.$copyText(JSON.stringify(this.jsonData)).then(function(e) {
-                alert('Copied')
-                console.log(e)
+                that.$toasted.show('Copied')
             }, function(e) {
-                alert('Can not copy')
-                console.log(e)
             })
         },
         formatJson: function(txt, compress) {
