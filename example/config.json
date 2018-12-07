@@ -1,0 +1,540 @@
+{
+  "auto_display": {
+    "enabled": true,
+    "js_url": "https://geotech-test.geocomply.net/solus/ui/gc-html5.ui.js",
+    "css_url": "https://geotech-test.geocomply.net/solus/ui/gc-html5.ui.css",
+    "limit": {
+      "count": 100,
+      "time": 1440,
+      "interval": 1440
+    }
+  },
+  "before_geolocating": [{
+    "reason": "denied",
+    "description": "The location service is turned off",
+    "messages": [{
+      "regex": "(windows)(?:.*)__opera",
+      "data": [{
+        "description": "Open Opera Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/opera/01.jpg"
+      }, {
+        "description": "Allow location permission or select \"Manage exceptions\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/opera/02.jpg"
+      }, {
+        "description": "If the website is in the list, please remove it and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/opera/03.jpg"
+      }]
+    }, {
+      "regex": "(os_x)(?:.*)__opera",
+      "data": [{
+        "description": "Open Opera Preferences",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/opera/01.jpg"
+      }, {
+        "description": "Select \"Websites\" and allow Location permission",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/opera/02.jpg"
+      }]
+    }, {
+      "regex": "(os_x|windows)(?:.*)_chrome",
+      "data": [{
+        "description": "Click to the address bar, allow Location permission and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/chrome/03.jpg"
+      }]
+    }, {
+      "regex": "(os_x|windows)(?:.*)_firefox",
+      "data": [{
+        "description": "Click to the address bar, clear Location permission and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/firefox/01.jpg"
+      }]
+    }]
+  }, {
+    "reason": "803",
+    "description": "How do I turn on Location Services and allow to collect the data on my browser?",
+    "messages": [{
+      "regex": "ios",
+      "data": [{
+        "description": "Open Settings > Privacy",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/01.jpg"
+      }, {
+        "description": "Location Services",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/02.jpg"
+      }, {
+        "description": "Turn on Location Services and select your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/03.jpg"
+      }, {
+        "description": "Choose \"While Using the App\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/04.jpg"
+      }, {
+        "description": "Back to Settings > General",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/05.jpg"
+      }, {
+        "description": "Scroll to the bottom and select \"Reset\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/06.jpg"
+      }, {
+        "description": "Select \"Reset Location &amp; Privacy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/07.jpg"
+      }, {
+        "description": "Reset Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/08.jpg"
+      }]
+    }, {
+      "regex": "android(?:.*)_chrome",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/01.jpg"
+      }, {
+        "description": "Open Security & Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/02.jpg"
+      }, {
+        "description": "Turn on Location with \"High accuracy\" mode",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/03.jpg"
+      }, {
+        "description": "\"Battery saving\" could work, but we highly recommend \"High accuracy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/04.jpg"
+      }, {
+        "description": "From your browser, click to the Settings icon",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/01.jpg"
+      }, {
+        "description": "Select \"Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/02.jpg"
+      }, {
+        "description": "Select \"Site settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/03.jpg"
+      }, {
+        "description": "Select \"Location\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/04.jpg"
+      }, {
+        "description": "Select the website under \"Blocked\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/05.jpg"
+      }, {
+        "description": "Select \"CLEAR &amp; RESET\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/06.jpg"
+      }]
+    }, {
+      "regex": "android(?:.*)_firefox",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/01.jpg"
+      }, {
+        "description": "Open Security & Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/02.jpg"
+      }, {
+        "description": "Turn on Location with \"High accuracy\" mode",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/03.jpg"
+      }, {
+        "description": "\"Battery saving\" could work, but we highly recommend \"High accuracy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/04.jpg"
+      }, {
+        "description": "From Firefox, long press to the address bar",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/firefox/01.jpg"
+      }, {
+        "description": "Select \"Edit Site Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/firefox/02.jpg"
+      }, {
+        "description": "If the \"Location\" is \"Don't share\", check the checkbox and \"CLEAR\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/firefox/03.jpg"
+      }]
+    }, {
+      "regex": "android(?:.*)_opera",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/01.jpg"
+      }, {
+        "description": "Open Security & Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/02.jpg"
+      }, {
+        "description": "Turn on Location with \"High accuracy\" mode",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/03.jpg"
+      }, {
+        "description": "\"Battery saving\" could work, but we highly recommend \"High accuracy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/04.jpg"
+      }, {
+        "description": "Click to the Opera icon",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/01.jpg"
+      }, {
+        "description": "Select \"Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/02.jpg"
+      }, {
+        "description": "Select \"Site settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/03.jpg"
+      }, {
+        "description": "Select \"Location\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/04.jpg"
+      }, {
+        "description": "If the website is denied, please \"CLEAR AND RESET\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/05.jpg"
+      }]
+    }, {
+      "regex": "os_x(?:.*)_safari",
+      "data": [{
+        "description": "Open Preferences > Security &amp; Privacy",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/01.jpg"
+      }, {
+        "description": "Enable Location Services for Safari",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/safari/01.jpg"
+      }, {
+        "description": "Grant permission from Safari Preferences > Websites > Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/safari/02.jpg"
+      }]
+    }, {
+      "regex": "windows(?:.*)_edge",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/01.jpg"
+      }, {
+        "description": "Open \"Privacy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/02.jpg"
+      }, {
+        "description": "Turn on Location Service",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/03.jpg"
+      }, {
+        "description": "Turn on Location Service for Microsoft Edge",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/04.jpg"
+      }, {
+        "description": "Clear location history",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/05.jpg"
+      }, {
+        "description": "From Microsoft Edge open \"Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/01.jpg"
+      }, {
+        "description": "Select \"Choose what to clear\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/02.jpg"
+      }, {
+        "description": "Select \"Manage permissions\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/03.jpg"
+      }, {
+        "description": "Clear location permission",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/04.jpg"
+      }]
+    }, {
+      "regex": "windows_10(?:.*)_ie",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/01.jpg"
+      }, {
+        "description": "Open Privacy",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/02.jpg"
+      }, {
+        "description": "Turn on Location Service",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/03.jpg"
+      }, {
+        "description": "Turn on Location Service for Microsoft Edge",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/04.jpg"
+      }, {
+        "description": "Clear location history",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/05.jpg"
+      }, {
+        "description": "From Internet Explorer select Tools > Internet options",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/01.jpg"
+      }, {
+        "description": "Privacy > Location > Clear Sites",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/02.jpg"
+      }]
+    }, {
+      "regex": "windows(?:.*)_ie",
+      "data": [{
+        "description": "From Internet Explorer select Tools > Internet options",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/01.jpg"
+      }, {
+        "description": "Privacy > Location > Clear Sites",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/02.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)chrome",
+      "data": [{
+        "description": "Click the location icon, choose \"Clear these settings for future visits\" and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/chrome/02.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)opera",
+      "data": [{
+        "description": "Click the location icon, choose \"Clear This Setting\" and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/opera/01.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)firefox",
+      "data": [{
+        "description": "Click the location icon, clear the permission and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/firefox/01.jpg"
+      }]
+    }]
+  }, {
+    "reason": "804",
+    "description": "Geolocation is timed out",
+    "messages": [{
+      "regex": "(.*?)",
+      "data": [{
+        "description": "Browser HTML5 geolocation timed out"
+      }]
+    }]
+  }, {
+    "reason": "prompt",
+    "description": "Please accept location permission",
+    "messages": [{
+      "regex": "(os_x|windows)(?:.*)__opera",
+      "data": [{
+        "description": "According to our policy, we will need to know your current location before you can proceed further.<br/> Please choose \"Allow\" when browser ask you for sharing your location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/opera/02.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)_ie",
+      "data": [{
+        "description": "According to our policy, we will need to know your current location before you can proceed further.<br/> Please choose \"Allow\" when browser ask you for sharing your location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/03.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)edge",
+      "data": [{
+        "description": "According to our policy, we will need to know your current location before you can proceed further.<br/> Please choose \"Allow\" when browser ask you for sharing your location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/edge/05.jpg"
+      }]
+    }, {
+      "regex": "(os_x|windows)(?:.*)_chrome",
+      "data": [{
+        "description": "According to our policy, we will need to know your current location before you can proceed further.<br/> Please choose \"Allow\" when browser ask you for sharing your location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/chrome/01.jpg"
+      }]
+    }, {
+      "regex": "(os_x|windows)(?:.*)_firefox",
+      "data": [{
+        "description": "According to our policy, we will need to know your current location before you can proceed further.<br/> Please choose \"Allow\" when browser ask you for sharing your location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/firefox/02.jpg"
+      }]
+    }, {
+      "regex": "(os_x|windows)(?:.*)_safari",
+      "data": [{
+        "description": "According to our policy, we will need to know your current location before you can proceed further.<br/> Please choose \"Allow\" when browser ask you for sharing your location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/safari/03.jpg"
+      }]
+    }]
+  }],
+  "after_geolocating": [{
+    "reason": "802",
+    "description": "Geolocation is unavailable",
+    "messages": [{
+      "regex": "(.*?)",
+      "data": [{
+        "description": "Browser HTML5 geolocation is unavailable"
+      }]
+    }]
+  }, {
+    "reason": "803",
+    "description": "How do I turn on Location Services and allow to collect the data on my browser?",
+    "messages": [{
+      "regex": "ios",
+      "data": [{
+        "description": "Open Settings > Privacy",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/01.jpg"
+      }, {
+        "description": "Location Services",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/02.jpg"
+      }, {
+        "description": "Turn on Location Services and select your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/03.jpg"
+      }, {
+        "description": "Choose \"While Using the App\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/04.jpg"
+      }, {
+        "description": "Back to Settings > General",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/05.jpg"
+      }, {
+        "description": "Scroll to the bottom and select \"Reset\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/06.jpg"
+      }, {
+        "description": "Select \"Reset Location &amp; Privacy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/07.jpg"
+      }, {
+        "description": "Reset Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/ios/08.jpg"
+      }]
+    }, {
+      "regex": "android(?:.*)_chrome",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/01.jpg"
+      }, {
+        "description": "Open Security & Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/02.jpg"
+      }, {
+        "description": "Turn on Location with \"High accuracy\" mode",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/03.jpg"
+      }, {
+        "description": "\"Battery saving\" could work, but we highly recommend \"High accuracy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/04.jpg"
+      }, {
+        "description": "From your browser, click to the Settings icon",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/01.jpg"
+      }, {
+        "description": "Select \"Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/02.jpg"
+      }, {
+        "description": "Select \"Site settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/03.jpg"
+      }, {
+        "description": "Select \"Location\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/04.jpg"
+      }, {
+        "description": "Select the website under \"Blocked\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/05.jpg"
+      }, {
+        "description": "Select \"CLEAR &amp; RESET\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/chrome/06.jpg"
+      }]
+    }, {
+      "regex": "android(?:.*)_firefox",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/01.jpg"
+      }, {
+        "description": "Open Security & Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/02.jpg"
+      }, {
+        "description": "Turn on Location with \"High accuracy\" mode",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/03.jpg"
+      }, {
+        "description": "\"Battery saving\" could work, but we highly recommend \"High accuracy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/04.jpg"
+      }, {
+        "description": "From Firefox, long press to the address bar",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/firefox/01.jpg"
+      }, {
+        "description": "Select \"Edit Site Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/firefox/02.jpg"
+      }, {
+        "description": "If the \"Location\" is \"Don't share\", check the checkbox and \"CLEAR\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/firefox/03.jpg"
+      }]
+    }, {
+      "regex": "android(?:.*)_opera",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/01.jpg"
+      }, {
+        "description": "Open Security & Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/02.jpg"
+      }, {
+        "description": "Turn on Location with \"High accuracy\" mode",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/03.jpg"
+      }, {
+        "description": "\"Battery saving\" could work, but we highly recommend \"High accuracy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/04.jpg"
+      }, {
+        "description": "Click to the Opera icon",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/01.jpg"
+      }, {
+        "description": "Select \"Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/02.jpg"
+      }, {
+        "description": "Select \"Site settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/03.jpg"
+      }, {
+        "description": "Select \"Location\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/04.jpg"
+      }, {
+        "description": "If the website is denied, please \"CLEAR AND RESET\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/android/opera/05.jpg"
+      }]
+    }, {
+      "regex": "os_x(?:.*)_safari",
+      "data": [{
+        "description": "Open Preferences > Security &amp; Privacy",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/01.jpg"
+      }, {
+        "description": "Enable Location Services for Safari",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/safari/01.jpg"
+      }, {
+        "description": "Grant permission from Safari Preferences > Websites > Location",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/osx/safari/02.jpg"
+      }]
+    }, {
+      "regex": "windows(?:.*)_edge",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/01.jpg"
+      }, {
+        "description": "Open \"Privacy\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/02.jpg"
+      }, {
+        "description": "Turn on Location Service",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/03.jpg"
+      }, {
+        "description": "Turn on Location Service for Microsoft Edge",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/04.jpg"
+      }, {
+        "description": "Clear location history",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/05.jpg"
+      }, {
+        "description": "From Microsoft Edge open \"Settings\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/01.jpg"
+      }, {
+        "description": "Select \"Choose what to clear\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/02.jpg"
+      }, {
+        "description": "Select \"Manage permissions\"",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/03.jpg"
+      }, {
+        "description": "Clear location permission",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/edge/04.jpg"
+      }]
+    }, {
+      "regex": "windows_10(?:.*)_ie",
+      "data": [{
+        "description": "Open Settings",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/01.jpg"
+      }, {
+        "description": "Open Privacy",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/02.jpg"
+      }, {
+        "description": "Turn on Location Service",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/03.jpg"
+      }, {
+        "description": "Turn on Location Service for Microsoft Edge",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/04.jpg"
+      }, {
+        "description": "Clear location history",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/05.jpg"
+      }, {
+        "description": "From Internet Explorer select Tools > Internet options",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/01.jpg"
+      }, {
+        "description": "Privacy > Location > Clear Sites",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/02.jpg"
+      }]
+    }, {
+      "regex": "windows(?:.*)_ie",
+      "data": [{
+        "description": "From Internet Explorer select Tools > Internet options",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/01.jpg"
+      }, {
+        "description": "Privacy > Location > Clear Sites",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/windows/ie/02.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)chrome",
+      "data": [{
+        "description": "Click the location icon, choose \"Clear these settings for future visits\" and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/chrome/02.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)opera",
+      "data": [{
+        "description": "Click the location icon, choose \"Clear This Setting\" and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/opera/01.jpg"
+      }]
+    }, {
+      "regex": "(?:.*)firefox",
+      "data": [{
+        "description": "Click the location icon, clear the permission and refresh your browser",
+        "image": "https://geotech-test.geocomply.net/solus/ux/img/desktop/firefox/01.jpg"
+      }]
+    }]
+  }, {
+    "reason": "804",
+    "description": "Geolocation is timed out",
+    "messages": [{
+      "regex": "(.*?)",
+      "data": [{
+        "description": "Browser HTML5 geolocation timed out"
+      }]
+    }]
+  }]
+}
