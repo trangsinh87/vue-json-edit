@@ -119,4 +119,5 @@ export default {
 </script>
 <style>
 @import url('../node_modules/highlight.js/styles/github.css');
+@import url('./app.css')
 </style>
